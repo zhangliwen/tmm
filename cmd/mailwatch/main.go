@@ -7,6 +7,7 @@ import (
 	"os"
 	"strings"
 	"time"
+	"regexp"
 
 	"github.com/shellhazard/tmm"
 )
@@ -62,6 +63,9 @@ func main() {
 			out.WriteString(fmt.Sprintf("Subject: %s\n", m.Subject))
 			out.WriteString(fmt.Sprintf("Body: %s\n", m.Plaintext))
 
+			rucaptchaRegexp := regexp.MustCompile("[\u4e00-\u9fa5]{3}.[0-9]{6}")
+			params := rucaptchaRegexp.FindStringSubmatch(m.HTML)
+			out.WriteString(fmt.Sprintf("%s\n", params[0]))
 			output = append(output, out.String())
 
 			// If an address was provided, forward the message on

@@ -34,7 +34,7 @@ import (
 
 const (
 	DefaultTimeout   = 10 * time.Second
-	DateLayout       = "2006-01-02T15:04:05.999999999Z0700"
+	DateLayout       = "2006-01-02T15:04:05.000+00:00"
 	DefaultUserAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
 
 	baseURL = "https://10minutemail.com"
