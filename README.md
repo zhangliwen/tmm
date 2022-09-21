@@ -12,7 +12,7 @@ This library depends on the [uTLS package](https://github.com/shellhazard/tmm), 
 
 Try the example program and get a mail proxy running in seconds:
 ```
-$ go install github.com/shellhazard/tmm/cmd/mailwatch
+$ go install github.com/zhangliwen/tmm/cmd/mailwatch
 $ mailwatch -fwd=realmail@example.com
 Your address is: fuzxptvvkwpdbalcek@sdvft.com
 Waiting for new messages.
@@ -20,7 +20,7 @@ Waiting for new messages.
 
 Or get stuck in:
 ```
-go get github.com/shellhazard/tmm
+go get github.com/zhangliwen/tmm
 ```
 
 ## Usage

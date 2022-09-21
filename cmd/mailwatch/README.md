@@ -5,6 +5,6 @@ A tiny command line program that creates and continiously renews a temporary ema
 ### Usage
 
 ```
-go install github.com/shellhazard/tmm/cmd/mailwatch
+go install github.com/zhangliwen/tmm/cmd/mailwatch
 mailwatch -fwd=realemail@example.com
 ```

@@ -29,7 +29,7 @@ import (
 	"time"
 
 	tls "github.com/refraction-networking/utls"
-	"github.com/shellhazard/tmm/internal"
+	"github.com/zhangliwen/tmm/internal"
 )
 
 const (

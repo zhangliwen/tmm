@@ -1,4 +1,4 @@
-module github.com/shellhazard/tmm
+module github.com/zhangliwen/tmm
 
 go 1.17
 
